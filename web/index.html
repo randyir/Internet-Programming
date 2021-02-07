@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>18360021 - Randy I.R.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./images/ISTN.png" rel="shortcut icon">
+        <style>
+            a{text-decoration:none}
+        </style>        
+    </head>
+    <body bgcolor="lightblue" link="darkblue" alink="darkdblue" vlink="darkblue">
+        <h1 align="center"><font color="darkblue">Registrasi<br>DATA MAHASISWA</font></h1>
+
+        <div class="wrapper">
+            <form action="SaveServlet" method="post">
+                <table>
+                    <tr>
+                        <td>NIM</td>
+                        <td>:</td>
+                        <td><input size ="26" type="text" name="nim" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input size ="26" type="text" name="nama" autofocus></td>
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td><textarea name="alamat"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Telp</td>
+                        <td>:</td>
+                        <td><input size ="26" type="text" name="telp"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td>
+                            <input type="radio" name="jenkel" value="pria" id="pria"><label for="pria">Pria</label>
+                            <input type="radio" name="jenkel" value="wanita" id="wanita"><label for="wanita">Wanita</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Agama</td>
+                        <td>:</td>
+                        <td>
+                            <select name="agama">
+                                <option selected disabled hidden>PILIH</option>
+                                <option value="islam">Islam</option>
+                                <option value="kristen">Kristen</option>
+                                <option value="kristen">Katolik</option>
+                                <option value="buddha">Buddha</option>
+                                <option value="hindu">Hindu</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="submit" class="btnSubmit">DAFTAR</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div> 
+        <div class="wrapper">
+            <a href='./ViewServlet'>MAHASISWA TERDAFTAR</a>
+        </div>
+    </body>
+</html>
